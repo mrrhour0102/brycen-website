@@ -3,7 +3,7 @@ import { footerLinks, socialLinks } from "../assets/data/data";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import Logo from "../assets/images/brycen.png";
-export function Footer() {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

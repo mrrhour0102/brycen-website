@@ -2,7 +2,7 @@ import { useInView, motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { categories, projects } from "../assets/data/data";
 import { ExternalLink } from "lucide-react";
-export function Projects() {
+export default function Projects() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {

@@ -1,19 +1,19 @@
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
-import PageHero from "../components/PageHero";
 import { useLocation } from "react-router-dom";
-import { heroData } from "../assets/data/data";
+import { heroData } from "../config/heroConfig";
+import PageHero from "../components/sections/PageHero";
 export default function GuestLayout() {
   const location = useLocation();
 
   const currentHero = heroData[location.pathname] || heroData["/"];
 
   return (
-    <section className="min-h-screen bg-slate-50 text-slate-950 transition-colors duration-300 dark:bg-neutral-950 dark:text-white">
+    <section className="min-h-screen ">
       <Navbar />
-      <PageHero {...currentHero} />
-      <main className="mx-auto min-h-[calc(100vh-80px)] max-w-7xl px-4 py-18 sm:px-6 lg:px-8">
+      <main className="min-h-[calc(100vh-80px)] w-full">
+        {currentHero.showHero !== false && <PageHero {...currentHero} />}
         <Outlet />
       </main>
       <Footer />

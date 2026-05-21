@@ -2,7 +2,7 @@ import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { reasons } from "../assets/data/data";
 import Us from "../assets/images/us.jpg";
-export function WhyChooseUs() {
+export default function WhyChooseUs() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {

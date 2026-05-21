@@ -2,7 +2,7 @@ import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { locations, partners } from "../assets/data/data";
 import GroupTeam from "../assets/images/group.png";
-export function Group() {
+export default function Group() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {

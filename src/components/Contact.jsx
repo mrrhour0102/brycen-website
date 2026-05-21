@@ -3,7 +3,7 @@ import { Send } from "lucide-react";
 import { useRef, useState } from "react";
 import { contactInfo } from "../assets/data/data";
 import ContactImage from "../assets/images/contact.jpg";
-export function Contact() {
+export default function Contact() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {

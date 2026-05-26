@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 import Container from "../ui/Container";
-import AnimatedSection from "../ui/AnimatedSection";
+import AnimatedSection from "../ui/Animated";
 
 export default function CTASection({
   title,

@@ -1,5 +1,5 @@
 import Container from "../ui/Container";
-import AnimatedSection from "../ui/AnimatedSection";
+import AnimatedSection from "../ui/Animated";
 
 export default function TimelineSection({ items = [] }) {
   return (

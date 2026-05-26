@@ -16,7 +16,7 @@ export const heroData = {
     subtitle:
       "Discover our comprehensive range of IT services and innovative solutions.",
     image: ServiceImage,
-    showHero: false,
+    showHero: true,
   },
 
   "/story": {

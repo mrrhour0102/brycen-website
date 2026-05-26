@@ -10,7 +10,7 @@ import SectionTitle from "./sections/SectionTitle";
 import FeatureList from "./sections/FeatureList";
 import ImageCard from "./sections/ImageCard";
 import Animated from "./ui/Animated";
-
+import Section from "./sections/Section";
 export default function About() {
   const ref = useRef(null);
 
@@ -20,7 +20,7 @@ export default function About() {
   });
 
   return (
-    <section className="bg-slate-50 py-24 text-slate-900 transition-colors duration-300 dark:bg-neutral-950 dark:text-white">
+    <Section>
       <Container>
         <div ref={ref}>
           <SplitSection
@@ -89,6 +89,6 @@ export default function About() {
           />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
